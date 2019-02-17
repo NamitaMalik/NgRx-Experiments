@@ -1,2 +1,2 @@
-# ngRx-Experiments
+# ngRx-Experiment
 ngRx experiments
