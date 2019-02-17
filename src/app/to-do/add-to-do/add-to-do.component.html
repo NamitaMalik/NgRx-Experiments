@@ -1,0 +1,7 @@
+<form (ngSubmit)="onSubmit()" #todoForm="ngForm">
+    <label>To Do:
+        <input type="text" pInputText [(ngModel)]="item" name="todo"/>
+    </label>
+    <p-button label="Click" type="submit"></p-button>
+</form>
+
