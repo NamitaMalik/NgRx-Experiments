@@ -17,7 +17,6 @@ export class AddToDoComponent {
   onSubmit() {
     const toDo = new ToDo(this.item);
     this.store.dispatch(new ToDoActions.AddToDo(toDo));
-  //  this.toDoService.toDos.next(new ToDo(this.item));
+    this.item = '';
   }
-
 }

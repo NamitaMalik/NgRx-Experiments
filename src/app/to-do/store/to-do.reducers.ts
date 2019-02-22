@@ -6,9 +6,7 @@ export interface State {
 }
 
 const initialState: State = {
-  toDos: [
-    new ToDo('Something to do initially')
-  ]
+  toDos: []
 };
 
 export function ToDoReducer(state = initialState, action: ToDoActions.ToDoActions) {
