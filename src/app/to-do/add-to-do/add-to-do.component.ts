@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 import {Store} from '@ngrx/store';
 
 import {ToDo} from './todo.model';
@@ -16,7 +16,7 @@ export class AddToDoComponent {
 
   onSubmit() {
     const toDo = new ToDo(this.item);
-    this.store.dispatch(new ToDoActions.AddToDo(toDo));
+    this.store.dispatch(new ToDoActions.AddToDoItem(toDo));
     this.item = '';
   }
 }

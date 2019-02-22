@@ -1,8 +1,8 @@
-import {ToDo} from '../add-to-do/todo.model';
+import { ToDo } from '../add-to-do/todo.model';
 import * as ToDoActions from './to-do.actions';
 
 export interface State {
-  toDos: any[];
+  toDos: ToDo[];
 }
 
 const initialState: State = {
@@ -11,12 +11,11 @@ const initialState: State = {
 
 export function ToDoReducer(state = initialState, action: ToDoActions.ToDoActions) {
   switch (action.type) {
-    case ToDoActions.ADD_TODO:
+    case ToDoActions.ADD_TODO_ITEM:
       return {
         ...state,
         toDos: [...state.toDos, action.payload]
       };
-
     default:
       return state;
   }

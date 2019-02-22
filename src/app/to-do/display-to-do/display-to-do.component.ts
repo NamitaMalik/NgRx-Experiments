@@ -17,5 +17,4 @@ export class DisplayToDoComponent implements OnInit {
   ngOnInit() {
     this.toDosState = this.store.select('toDos');
   }
-
 }

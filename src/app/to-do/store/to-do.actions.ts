@@ -1,13 +1,12 @@
-import {Action} from '@ngrx/store';
-import {ToDo} from '../add-to-do/todo.model';
+import { Action } from '@ngrx/store';
+import { ToDo } from '../add-to-do/todo.model';
 
-export const ADD_TODO = 'ADD_TODO';
+export const ADD_TODO_ITEM = '[AddToDo] ADD_TODO_ITEM';
 
-export class AddToDo implements Action {
-  readonly type = ADD_TODO;
-
+export class AddToDoItem implements Action {
+  readonly type = '[AddToDo] ADD_TODO_ITEM';
   constructor(public payload: ToDo) {
   }
 }
 
-export type ToDoActions = AddToDo;
+export type ToDoActions = AddToDoItem;
