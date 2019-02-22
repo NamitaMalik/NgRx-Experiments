@@ -1,19 +1,24 @@
 <div class="mt20">
-    <p-table [value]="toDos">
-        <ng-template pTemplate="caption">
-            To Do
-        </ng-template>
-        <ng-template pTemplate="header">
-            <tr>
-                <th>Items</th>
-                <th>Action</th>
-            </tr>
-        </ng-template>
-        <ng-template pTemplate="body" let-toDo>
-            <tr>
-                <td>{{toDo.item}}</td>
-                <td></td>
-            </tr>
-        </ng-template>
-    </p-table>
+    <ul>
+        <li *ngFor="let toDo of (toDosState | async).toDos">
+            {{toDo.item}}
+        </li>
+    </ul>
+    <!--<p-table [value]="toDos | async">-->
+        <!--<ng-template pTemplate="caption">-->
+            <!--To Do-->
+        <!--</ng-template>-->
+        <!--<ng-template pTemplate="header">-->
+            <!--<tr>-->
+                <!--<th>Items</th>-->
+                <!--<th>Action</th>-->
+            <!--</tr>-->
+        <!--</ng-template>-->
+        <!--<ng-template pTemplate="body" let-toDo>-->
+            <!--<tr>-->
+                <!--<td>{{toDo.item}}</td>-->
+                <!--<td></td>-->
+            <!--</tr>-->
+        <!--</ng-template>-->
+    <!--</p-table>-->
 </div>
