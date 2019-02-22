@@ -206,3 +206,13 @@ this.toDosState = this.store.select('toDos');
 The above statement introduces us to another very important concept i.e **Selectors**.
 **Selectors** like reducers are **pure functions**. They take state as an argument and return data 
 which can be passed to the Components. We used `store.state` method to get `ToDo` items from the **Store** by passing state `toDos`.
+
+Follow Me
+---
+[Github](https://github.com/NamitaMalik)
+
+[Twitter](https://twitter.com/namita13_04)
+
+[LinkedIn](https://in.linkedin.com/in/namita-malik-a7885b23)
+
+[More Blogs By Me](https://namitamalik.github.io/)
