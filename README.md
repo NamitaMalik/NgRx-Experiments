@@ -34,5 +34,5 @@ this.toDoService.toDo$.next(new ToDo(this.item));
 ```
 
 ... and the `DisplayComponent`, simply subscribed to the `toDo$` subject, pushed it into an array and 
-displayed it on the template with help of `ngFor` directive. This is simple and probably doesn't even need a state 
+displayed it on the template with help of `*ngFor` directive. This is simple and probably doesn't even need a state 
 management mechanism, but it would be fun to see how to achieve the same behavior using **ngRx**.
