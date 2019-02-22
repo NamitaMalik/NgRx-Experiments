@@ -3,8 +3,8 @@
 At some point while building our Angular applications we feel the need to have a state management mechanism. One of the 
 most popular state mechanism for Angular applications is **NgRx** which is inspired by **Redux**.
 
-To understand how to work with **NgRx**, I built a tiny **TODO** app and then tried to use **NgRx** with it.
-Initially my **TODO** app just consisted of the following:
+To understand how to work with **NgRx**, I built a tiny **ToDo** app and then tried to use **NgRx** with it.
+Initially my **ToDo** app just consisted of the following:
 
 1. AddToDoComponent
 2. DisplayToDoComponent
