@@ -1,9 +1,9 @@
 # Getting started with NgRx
 
 At some point while building our Angular applications we feel the need to have a state management mechanism. One of the 
-most popular state mechanism for Angular applications is **ngRx** which is inspired by **Redux**.
+most popular state mechanism for Angular applications is **NgRx** which is inspired by **Redux**.
 
-To understand how to work with **ngRx**, I built a tiny **TODO** app and then tried to use **ngRx** with it.
+To understand how to work with **NgRx**, I built a tiny **TODO** app and then tried to use **NgRx** with it.
 Initially my **TODO** app just consisted of the following:
 
 1. AddToDoComponent
@@ -35,14 +35,14 @@ this.toDoService.toDo$.next(new ToDo(this.item));
 
 ... and the `DisplayComponent`, simply subscribed to the `toDo$` subject, pushed it into an array and 
 displayed it on the template with help of `*ngFor` directive. This is simple and probably doesn't even need a state 
-management mechanism, but it would be fun to see how to achieve the same behavior using **ngRx**.
+management mechanism, but it would be fun to see how to achieve the same behavior using **NgRx**.
 
-So let's start. There are few key concepts in **ngRx**, let's take them one by one:
+So let's start. There are few key concepts in **NgRx**, let's take them one by one:
 
 * **Actions** - unique events that happen throughout the application. An Action can be anything - from network request 
 to simple user interaction. Actions basically describe how events will be handled in your application.
 
-    **Action** is an interface in **ngRx** with only one property i.e. `type`. 
+    **Action** is an interface in **NgRx** with only one property i.e. `type`. 
 
      - `type` is defined in form `[Source] Event` - `Source` defines the origin of action whereas `Event` depicts the category of action.
 
@@ -127,7 +127,7 @@ that they give same output for any given input. A reducer function basically tak
   
   Let's move further. 
   
-  We now need to register our state. In **ngRx**, state of the application is one large object. We use **StoreModule.forRoot()**
+  We now need to register our state. In **NgRx**, state of the application is one large object. We use **StoreModule.forRoot()**
   to register the global providers for the application. This is done in the **AppModule** of the application as show below:
   
   ```TypeScript
